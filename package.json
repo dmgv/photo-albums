@@ -6,7 +6,9 @@
   "scripts": {
     "test": "test",
     "precommit": "lint-staged",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url ./ -d public/"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -27,6 +29,7 @@
   "private": true,
   "homepage": "https://github.com/dmgv/photo-albums",
   "dependencies": {
+    "baguettebox.js": "^1.10.0",
     "bootstrap": "^4.1.1",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
